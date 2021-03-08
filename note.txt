@@ -1,0 +1,27 @@
+feature selection: (what indicators to feed to the model)
+
+1. feature fileter -> model independent -> statistical properties of the feature (e.g. correlation)
+
+2. feature wrapper -> test features in model
+
+#####################################################################
+what to do:
+
+1. start with an indicator (h-days returns of the close price)
+
+2. build a model (start with a simple one)
+
+3. try other indicators and evaluate them using feature filter
+
+4. try these indicators using feature wrapper
+
+5. build other models (some more complicated ones)
+
+#######################################################################
+
+indicator:
+
+1. h-days returns of the close price
+
+R_i-h = (C_i - C_i-h) / C_i-h
+
